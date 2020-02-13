@@ -6,7 +6,7 @@ def summon_captain_planet(calls)
     calls.collect do |call| 
     call.capitalize + "!"
   end
-
+end
 
 def long_planeteer_calls(calls) 
   i = 0 
@@ -16,6 +16,7 @@ def long_planeteer_calls(calls)
     return false
   i = i + 1
   end 
+end
 
 def find_the_cheese(cheese)
   cheese_types = ["cheddar", "gouda", "camembert"]
