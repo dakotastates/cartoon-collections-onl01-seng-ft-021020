@@ -6,15 +6,15 @@ def summon_captain_planet(planeteer_calls)
   planeteer_calls.collect {|call| "#{call.upcase}!" }
 end
 
-def long_planeteer_calls(calls)
-  i = 0
-  while i < calls.length
-  if calls[i].size < 4
+
+def long_planeteer_calls(calls) 
+  i = 0 
+  if  calls.any? {|i| i.length > 4}
+    return true
+  else 
     return false
-  else
-    true
-  end
-  i += 1
+  i = i + 1
+  end 
 end
 end
 
