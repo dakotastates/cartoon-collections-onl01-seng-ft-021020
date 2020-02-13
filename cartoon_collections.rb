@@ -16,7 +16,6 @@ def long_planeteer_calls(calls)
   i = i + 1
   end 
 end
-end
 
 def find_the_cheese(cheese)
   assorted_cheese = cheese.split
